@@ -57,7 +57,7 @@ function! neomake#makers#ft#ruby#mri() abort
 
     return {
         \ 'exe': 'ruby',
-        \ 'args': ['-c', '-T1', '-w'],
+        \ 'args': ['-c', '-w'],
         \ 'errorformat': errorformat,
         \ 'output_stream': 'both',
         \ }
@@ -75,7 +75,7 @@ function! neomake#makers#ft#ruby#jruby() abort
 
     return {
         \ 'exe': 'jruby',
-        \ 'args': ['-c', '-T1', '-w'],
+        \ 'args': ['-c', '-w'],
         \ 'errorformat': errorformat
         \ }
 endfunction
